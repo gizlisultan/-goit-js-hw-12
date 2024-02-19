@@ -71,9 +71,9 @@ function searchImg(evt) {
 }
 
         function fetchPhoto(photo, page = 1) {
-            return axios.get(`${serverRequest}&q=${photo}`, {
+            return axios.get(`${URL}`, {
                 params: {
-                    apiKey: KEY,
+                    key: KEY,
                     q: photo,
                     image_type: "photo",
                     orientation: "horizontal",
